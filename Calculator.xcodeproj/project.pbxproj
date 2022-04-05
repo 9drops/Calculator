@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF424D0B1EBE1B1300F39E36 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF424D091EBE1B1300F39E36 /* CalcViewController.m */; };
 		BF424D0C1EBE1B1300F39E36 /* CalcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF424D0A1EBE1B1300F39E36 /* CalcViewController.xib */; };
-		BF424D191EBF6C4B00F39E36 /* exp_func.c in Sources */ = {isa = PBXBuildFile; fileRef = BF424D151EBF6C4B00F39E36 /* exp_func.c */; };
+		BF424D191EBF6C4B00F39E36 /* exp_func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF424D151EBF6C4B00F39E36 /* exp_func.cpp */; };
 		BF424D1A1EBF6C4B00F39E36 /* exp_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = BF424D171EBF6C4B00F39E36 /* exp_parser.c */; };
 		BF933DA61EBDD8F600EA0CDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF933DA51EBDD8F600EA0CDB /* main.m */; };
 		BF933DA91EBDD8F600EA0CDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF933DA81EBDD8F600EA0CDB /* AppDelegate.m */; };
@@ -41,7 +41,7 @@
 		BF424D081EBE1B1300F39E36 /* CalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcViewController.h; sourceTree = "<group>"; };
 		BF424D091EBE1B1300F39E36 /* CalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcViewController.m; sourceTree = "<group>"; };
 		BF424D0A1EBE1B1300F39E36 /* CalcViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalcViewController.xib; sourceTree = "<group>"; };
-		BF424D151EBF6C4B00F39E36 /* exp_func.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exp_func.c; sourceTree = "<group>"; };
+		BF424D151EBF6C4B00F39E36 /* exp_func.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exp_func.cpp; sourceTree = "<group>"; };
 		BF424D161EBF6C4B00F39E36 /* exp_func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exp_func.h; sourceTree = "<group>"; };
 		BF424D171EBF6C4B00F39E36 /* exp_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exp_parser.c; sourceTree = "<group>"; };
 		BF424D181EBF6C4B00F39E36 /* exp_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exp_parser.h; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		BF424D141EBF6C4B00F39E36 /* CalcExp */ = {
 			isa = PBXGroup;
 			children = (
-				BF424D151EBF6C4B00F39E36 /* exp_func.c */,
+				BF424D151EBF6C4B00F39E36 /* exp_func.cpp */,
 				BF424D161EBF6C4B00F39E36 /* exp_func.h */,
 				BF424D171EBF6C4B00F39E36 /* exp_parser.c */,
 				BF424D181EBF6C4B00F39E36 /* exp_parser.h */,
@@ -245,6 +245,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -297,7 +298,7 @@
 				BF424D0B1EBE1B1300F39E36 /* CalcViewController.m in Sources */,
 				BF933DA61EBDD8F600EA0CDB /* main.m in Sources */,
 				BF424D1A1EBF6C4B00F39E36 /* exp_parser.c in Sources */,
-				BF424D191EBF6C4B00F39E36 /* exp_func.c in Sources */,
+				BF424D191EBF6C4B00F39E36 /* exp_func.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +443,7 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.up366.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -455,6 +457,7 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.up366.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

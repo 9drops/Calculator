@@ -36,8 +36,8 @@ double mul_d(double a, double b);
 int div_i(int a, int b);
 double div_d(double a, double b);
 int mod(int a, int b);
-int or(int a, int b);
-int and(int a, int b);
+int or2(int a, int b);
+int and2(int a, int b);
 int eq_i(int a, int b);
 int ne_i(int a, int b);
 int gt_i(int a, int b);
@@ -146,7 +146,7 @@ char *substring(char* str, char* result,int offset, int count);
  * @param 
  * @return TRUE
  */
-bool true();
+bool true2();
 
 
 /**
@@ -156,7 +156,7 @@ bool true();
  * @param 
  * @return FALSE
  */
-bool false();
+bool false2();
 
 
 /**
@@ -165,7 +165,7 @@ bool false();
  * @param flag
  * @return TRUE or FALSE
  */
-bool not(bool flag);
+bool not2(bool flag);
 
 
 /**

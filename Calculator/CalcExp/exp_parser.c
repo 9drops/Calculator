@@ -528,7 +528,7 @@ int exp_parser(char *exp, char *result, TYPE *res_type, int size)
 				p++;
 			}
 
-			param_type = INT;
+			param_type = LONG;
 
 			if (is_double)
 				param_type = DOUBLE;
