@@ -8,6 +8,9 @@
 
 #import "CalcViewController.h"
 #import "exp_parser.h"
+#import "UMCommon/UMCommon.h"
+
+#define UmengAppKey @"6252b3d16adb343c47fe3a30"
 
 @interface CalcViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *resultLabel;
@@ -21,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [UMConfigure initWithAppkey:UmengAppKey channel:nil];
     self.expression = @"";
     self.resultLabel.delegate = self;
 }
@@ -83,7 +87,7 @@
 - (IBAction)calculate:(id)sender {
     self.expression = self.resultLabel.text;
     if (self.expression.length == 0) {
-        self.strResult = @"错误";
+        self.strResult = @"Error";
         goto _end;
     }
     
@@ -93,14 +97,14 @@
             self.expression = [self.expression stringByAppendingString:@"/100.0"];
         }
         
-        char *exp = (char *)[self.expression UTF8String];
+        char *exp = (char *)[[self replaceOperators:self.expression] UTF8String];
         char result[1024]= {0};
         TYPE res_type;
         int res_size = sizeof(result);
         int ret = exp_parser(exp, result, &res_type, res_size);
         printf("ret:%d, result:'%s' type:%d stype:%s\n\n", ret, result, res_type, exp_get_stype(res_type));
         if (ret) {
-            self.strResult = @"错误";
+            self.strResult = @"Error";
         } else {
             self.strResult = [NSString stringWithCString:exp_trim_zero(result) encoding:NSUTF8StringEncoding];
         }
@@ -119,7 +123,9 @@ _end:
 
 #pragma mark - private methods
 - (BOOL)p_isOperator:(NSString *)str {
-    return [str isEqualToString:@"/"] || [str isEqualToString:@"*"] || [str isEqualToString:@"-"] || [str isEqualToString:@"+"];
+    return [str isEqualToString:@"/"] || [str isEqualToString:@"*"] ||
+    [str isEqualToString:@"-"] || [str isEqualToString:@"+"] ||
+    [str isEqualToString:@"×"] || [str isEqualToString:@"÷"];
 }
 
 - (BOOL)p_invalidEXP:(NSString *)inputString {
@@ -142,6 +148,19 @@ _end:
     self.expression = textField.text;
     [self calculate:nil];
     return YES;
+}
+
+#pragma mark - getter/setter
+//- (void)setExpression:(NSString *)expression {
+//    _expression = [self replaceOperators:expression];
+//}
+
+#pragma mark - utils
+
+- (NSString *)replaceOperators:(NSString *)str {
+    str = [str stringByReplacingOccurrencesOfString:@"×" withString:@"*"];
+    str = [str stringByReplacingOccurrencesOfString:@"÷" withString:@"/"];
+    return str;
 }
 
 @end

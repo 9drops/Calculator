@@ -527,11 +527,8 @@ int exp_parser(char *exp, char *result, TYPE *res_type, int size)
 				param_buf[parambuf_index++] = *p;
 				p++;
 			}
-
-			param_type = LONG;
-
-			if (is_double)
-				param_type = DOUBLE;
+            
+            param_type = is_double? DOUBLE : LONG;
 
 			/*参数入栈*/
 			strncpy(param_stack[++ps_top].value, param_buf, EXP_MAX_BUF_SIZE - 1); 

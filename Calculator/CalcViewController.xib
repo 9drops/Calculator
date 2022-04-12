@@ -26,7 +26,7 @@
                         <constraint firstAttribute="width" secondItem="NnB-GM-Bx4" secondAttribute="height" multiplier="1:1" id="Fi2-EQ-6uW"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                    <state key="normal" title="+">
+                    <state key="normal" title="÷">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -161,7 +161,7 @@
                         <constraint firstAttribute="width" secondItem="q3j-fE-2zZ" secondAttribute="height" multiplier="1:1" id="ujC-qq-7A3"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                    <state key="normal" title="-">
+                    <state key="normal" title="×">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -227,7 +227,7 @@
                         <constraint firstAttribute="width" secondItem="Y16-Gy-Ccq" secondAttribute="height" multiplier="1:1" id="HDp-g2-das"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                    <state key="normal" title="*">
+                    <state key="normal" title="-">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -293,7 +293,7 @@
                         <constraint firstAttribute="width" secondItem="kSg-2B-6I1" secondAttribute="height" multiplier="1:1" id="4v1-6a-Klv"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                    <state key="normal" title="/">
+                    <state key="normal" title="+">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <userDefinedRuntimeAttributes>
@@ -446,7 +446,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
                     <state key="normal" title="=">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleColor" systemColor="systemOrangeColor"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -560,6 +560,9 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
