@@ -1,2 +1,3 @@
 # Calculator
-仿iOS系统计算器，支持加减乘除四则混合运算
+一款支持加减乘除括号四则混合运算的计算器。<br>
+A calculator support addition,subtract,multiplication,division.
