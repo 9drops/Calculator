@@ -27,6 +27,9 @@
     [UMConfigure initWithAppkey:UmengAppKey channel:nil];
     self.expression = @"";
     self.resultLabel.delegate = self;
+    self.resultLabel.inputView = [UIView new];
+    self.resultLabel.text = [UIPasteboard generalPasteboard].string;
+    self.expression = self.resultLabel.text;
 }
 
 //暗黑模式
@@ -149,11 +152,6 @@ _end:
     [self calculate:nil];
     return YES;
 }
-
-#pragma mark - getter/setter
-//- (void)setExpression:(NSString *)expression {
-//    _expression = [self replaceOperators:expression];
-//}
 
 #pragma mark - utils
 

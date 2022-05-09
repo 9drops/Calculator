@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F97FC39030C25A158933E67 /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B239195155B2D47A1FBFEE /* Pods_Calculator.framework */; };
+		BF3E72B2282969E300AC89FA /* exp_func.c in Sources */ = {isa = PBXBuildFile; fileRef = BF3E72B1282969E300AC89FA /* exp_func.c */; };
 		BF424D0B1EBE1B1300F39E36 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF424D091EBE1B1300F39E36 /* CalcViewController.m */; };
 		BF424D0C1EBE1B1300F39E36 /* CalcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF424D0A1EBE1B1300F39E36 /* CalcViewController.xib */; };
-		BF424D191EBF6C4B00F39E36 /* exp_func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF424D151EBF6C4B00F39E36 /* exp_func.cpp */; };
 		BF424D1A1EBF6C4B00F39E36 /* exp_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = BF424D171EBF6C4B00F39E36 /* exp_parser.c */; };
 		BF8EF1682802E2CA006904E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8EF16A2802E2CA006904E4 /* InfoPlist.strings */; };
 		BF933DA61EBDD8F600EA0CDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF933DA51EBDD8F600EA0CDB /* main.m */; };
@@ -42,10 +42,10 @@
 /* Begin PBXFileReference section */
 		211FC240DD8C29ACBA0B5FBB /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		3D5AF99826ACB7EE61E470A5 /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3E72B1282969E300AC89FA /* exp_func.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exp_func.c; sourceTree = "<group>"; };
 		BF424D081EBE1B1300F39E36 /* CalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcViewController.h; sourceTree = "<group>"; };
 		BF424D091EBE1B1300F39E36 /* CalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcViewController.m; sourceTree = "<group>"; };
 		BF424D0A1EBE1B1300F39E36 /* CalcViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalcViewController.xib; sourceTree = "<group>"; };
-		BF424D151EBF6C4B00F39E36 /* exp_func.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exp_func.cpp; sourceTree = "<group>"; };
 		BF424D161EBF6C4B00F39E36 /* exp_func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exp_func.h; sourceTree = "<group>"; };
 		BF424D171EBF6C4B00F39E36 /* exp_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exp_parser.c; sourceTree = "<group>"; };
 		BF424D181EBF6C4B00F39E36 /* exp_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exp_parser.h; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		BF424D141EBF6C4B00F39E36 /* CalcExp */ = {
 			isa = PBXGroup;
 			children = (
-				BF424D151EBF6C4B00F39E36 /* exp_func.cpp */,
+				BF3E72B1282969E300AC89FA /* exp_func.c */,
 				BF424D161EBF6C4B00F39E36 /* exp_func.h */,
 				BF424D171EBF6C4B00F39E36 /* exp_parser.c */,
 				BF424D181EBF6C4B00F39E36 /* exp_parser.h */,
@@ -356,8 +356,8 @@
 				BF933DA91EBDD8F600EA0CDB /* AppDelegate.m in Sources */,
 				BF424D0B1EBE1B1300F39E36 /* CalcViewController.m in Sources */,
 				BF933DA61EBDD8F600EA0CDB /* main.m in Sources */,
+				BF3E72B2282969E300AC89FA /* exp_func.c in Sources */,
 				BF424D1A1EBF6C4B00F39E36 /* exp_parser.c in Sources */,
-				BF424D191EBF6C4B00F39E36 /* exp_func.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
